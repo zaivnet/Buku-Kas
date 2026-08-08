@@ -14,6 +14,20 @@ Aplikasi manajemen keuangan (buku kas) multi-outlet & multi-user, dibangun denga
 
 ---
 
+## 🐳 Deployment Cepat via Docker / Proxmox VE
+
+Aplikasi ini dilengkapi konfigurasi Docker multi-stage & Docker Compose untuk kemudahan instalasi di **Proxmox VE (LXC / VM)** atau server VPS lainnya:
+
+```bash
+git clone https://github.com/zaivnet/Buku-Kas.git
+cd Buku-Kas
+docker compose up -d
+```
+
+*Aplikasi langsung aktif di `http://localhost:8000` (atau IP Proxmox Anda). Lihat [DOCKER.md](file:///E:/laragon/www/buku/DOCKER.md) untuk panduan lengkap Proxmox.*
+
+---
+
 ## Fitur Utama
 
 - 📊 **Dashboard** — ringkasan saldo, grafik tren pemasukan vs pengeluaran, breakdown per kategori
