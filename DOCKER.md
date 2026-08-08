@@ -18,7 +18,7 @@ docker compose up -d --build
 ```
 
 Setelah beberapa detik, aplikasi **Buku Kas Digital** akan langsung aktif dan siap diakses melalui browser:
-`http://IP_PROXMOX_ANDA:8000`
+`http://IP_PROXMOX_ANDA:1990`
 
 ---
 

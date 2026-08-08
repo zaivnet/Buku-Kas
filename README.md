@@ -24,7 +24,7 @@ cd Buku-Kas
 docker compose up -d
 ```
 
-*Aplikasi langsung aktif di `http://localhost:8000` (atau IP Proxmox Anda). Lihat [DOCKER.md](file:///E:/laragon/www/buku/DOCKER.md) untuk panduan lengkap Proxmox.*
+*Aplikasi langsung aktif di `http://localhost:1990` (atau IP Proxmox Anda: `http://IP-PROXMOX:1990`). Lihat [DOCKER.md](file:///E:/laragon/www/buku/DOCKER.md) untuk panduan lengkap Proxmox.*
 
 ---
 

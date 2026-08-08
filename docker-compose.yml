@@ -8,13 +8,13 @@ services:
     container_name: bukukas_app
     restart: always
     ports:
-      - "8000:80"
+      - "1990:80"
     environment:
       APP_NAME: "Buku Kas Digital"
       APP_ENV: "production"
       APP_KEY: "base64:7Kx2T+gN/eXp93x2A73gW33lJ510793x2A73gW33lJ4=" # Replace with your key
       APP_DEBUG: "false"
-      APP_URL: "http://localhost:8000"
+      APP_URL: "http://localhost:1990"
       LOG_CHANNEL: "daily"
       DB_CONNECTION: "mysql"
       DB_HOST: "db"
