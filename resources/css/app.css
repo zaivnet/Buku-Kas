@@ -1,0 +1,67 @@
+/* Import Inter font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    body {
+        @apply bg-neutral-bg text-neutral-text;
+    }
+}
+
+@layer components {
+    /* Badge pemasukan/pengeluaran */
+    .badge-income {
+        @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-success-100 text-success-700;
+    }
+
+    .badge-expense {
+        @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-danger-100 text-danger-700;
+    }
+
+    /* Button utama */
+    .btn-primary {
+        @apply inline-flex items-center gap-1.5 px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors duration-150;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center gap-1.5 px-4 py-2 bg-white text-neutral-text text-sm font-medium rounded-lg border border-neutral-border hover:bg-neutral-bg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors duration-150;
+    }
+
+    .btn-danger {
+        @apply inline-flex items-center gap-1.5 px-4 py-2 bg-danger text-white text-sm font-medium rounded-lg hover:bg-danger-700 focus:outline-none focus:ring-2 focus:ring-danger focus:ring-offset-2 transition-colors duration-150;
+    }
+
+    /* Form input */
+    .form-input {
+        @apply block w-full rounded-lg border-neutral-border text-sm text-neutral-text shadow-sm focus:border-primary focus:ring-primary;
+    }
+
+    .form-label {
+        @apply block text-sm font-medium text-neutral-text mb-1;
+    }
+
+    .form-error {
+        @apply mt-1 text-xs text-danger-600;
+    }
+
+    /* Card */
+    .card {
+        @apply bg-white rounded-xl border border-neutral-border shadow-sm;
+    }
+
+    /* Sidebar item */
+    .sidebar-link {
+        @apply flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-neutral-muted hover:bg-primary-50 hover:text-primary transition-colors duration-150;
+    }
+
+    .sidebar-link.active {
+        @apply bg-primary-50 text-primary;
+    }
+}
