@@ -67,8 +67,8 @@ docker compose up -d
 
 ```bash
 # 1. Clone repository
-git clone <repo-url> buku-kas
-cd buku-kas
+git clone https://github.com/zaivnet/Buku-Kas.git
+cd Buku-Kas
 
 # 2. Install PHP dependencies
 composer install
