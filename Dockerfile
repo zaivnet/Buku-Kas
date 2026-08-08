@@ -14,7 +14,7 @@ RUN npm run build
 FROM php:8.3-fpm-alpine
 
 # Install System Dependencies & PHP Extensions required by Laravel + Intervention Image + DomPDF
-RUN apk add --no-grad \
+RUN apk add --no-cache \
     nginx \
     supervisor \
     curl \
